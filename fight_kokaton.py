@@ -145,9 +145,6 @@ class Score:
     スコア表示に関するスコア
     '''
     def __init__(self):
-        '''
-        スコア表示用のフォント、文字色などを設定している
-        '''
         self.fonto = pg.font.Font(None, 50)
         self.color = (0, 0, 255)
         self.score = 0
@@ -156,9 +153,6 @@ class Score:
         self.rct.center = (100, HEIGHT - 50)
 
     def update(self, screen: pg.Surface):
-        '''
-        現在のスコアに応じた文字列を再生成して、画面に送っている
-        '''
         self.img = self.fonto.render(f"Score: {self.score}", 0, self.color)
         screen.blit(self.img, self.rct)
 
