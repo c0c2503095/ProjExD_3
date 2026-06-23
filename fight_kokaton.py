@@ -200,10 +200,7 @@ def main():
                     pg.display.update()
                     beam = None
                     bombs[i] = None
-<<<<<<< HEAD
-=======
                     score.score += 1
->>>>>>> score
         bombs = [bomb for bomb in bombs if bomb is not None]
 
         key_lst = pg.key.get_pressed()
@@ -212,10 +209,7 @@ def main():
             beam.update(screen)   
         for bomb in bombs:
             bomb.update(screen)
-<<<<<<< HEAD
-=======
         score.update(screen)
->>>>>>> score
         pg.display.update()
         tmr += 1
         clock.tick(50)
